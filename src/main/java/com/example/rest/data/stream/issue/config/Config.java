@@ -1,4 +1,9 @@
-package com.example.rest.data.stream.issue;
+package com.example.rest.data.stream.issue.config;
+
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
+import org.springframework.data.web.config.EnableSpringDataWebSupport;
 
 /*
  * Copyright 2023-2025 the original author or authors.
@@ -16,4 +21,7 @@ package com.example.rest.data.stream.issue;
  * limitations under the License.
  * @author : anasoid
  * Date :   6/6/25
- */ public class TestcontainersConfiguration {}
+ */
+@Configuration
+
+public class Config {}

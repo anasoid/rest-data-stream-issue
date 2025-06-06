@@ -1,4 +1,4 @@
-package com.example.rest.data.stream.issue;
+package com.example.rest.data.stream.issue.domain;
 
 /*
  * Copyright 2023-2025 the original author or authors.
@@ -16,4 +16,21 @@ package com.example.rest.data.stream.issue;
  * limitations under the License.
  * @author : anasoid
  * Date :   6/6/25
- */ public class TestcontainersConfiguration {}
+ */
+
+import java.math.BigInteger;
+import lombok.Getter;
+import lombok.Setter;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.mapping.Field;
+
+@Getter
+@Setter
+@Document
+public class Person {
+
+  @Id private BigInteger id;
+  @Field private String name;
+  @Field private String email;
+}

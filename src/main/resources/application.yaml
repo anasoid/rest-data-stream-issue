@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: rest-data-stream-issue
+  data:
+    mongodb:
+      uri: mongodb://admin:admin@localhost:27017/data
+      repositories:
+        enabled: true

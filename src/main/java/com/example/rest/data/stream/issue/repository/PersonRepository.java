@@ -1,4 +1,9 @@
-package com.example.rest.data.stream.issue;
+package com.example.rest.data.stream.issue.repository;
+
+import com.example.rest.data.stream.issue.domain.Person;
+import java.math.BigInteger;
+import org.springframework.data.mongodb.repository.MongoRepository;
+import org.springframework.stereotype.Repository;
 
 /*
  * Copyright 2023-2025 the original author or authors.
@@ -16,4 +21,6 @@ package com.example.rest.data.stream.issue;
  * limitations under the License.
  * @author : anasoid
  * Date :   6/6/25
- */ public class TestcontainersConfiguration {}
+ */
+@Repository
+public interface PersonRepository extends MongoRepository<Person, BigInteger> {}
